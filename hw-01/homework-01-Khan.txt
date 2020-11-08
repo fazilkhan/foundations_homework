@@ -1,0 +1,13 @@
+1. 398 accidents - Used “wc -l OSHA\ fatalities\ FY2017.csv” command. (This could be wrong and I found things online to avoid blank lines but did not want to just copy paste it without knowing how it worked).
+
+2. Nine explosion related accidents. 111 accidents involved falls. - Used commands "grep explosion OSHA\ fatalities\ FY2017.csv | wc -l" and "grep fall OSHA\ fatalities\ FY2017.csv | grep -v falling | wc -l".
+
+3. 120 lines. Used “grep 2017 OSHA\ fatalities\ FY2017.csv > 2017accidents.txt” command to create a new file of 2017 accidents. Then used “wc-l 2017accidents.txt” command to calculate the number of lines in that file.
+
+4. head -n 1 OSHA\ fatalities\ FY2017.csv
+
+5. 12 accidents involved forklifts. Created a separate file with “grep forklift OSHA\ fatalities\ FY2017.csv > forkliftaccidents.txt” command. Could have also done through "grep forklift OSHA\ fatalities\ FY2017.csv | wc -l" command just want to know the number of accidents.
+
+6. Two accidents were on Christmas Eve. Created a separate file with “grep 12/24 OSHA\ fatalities\ FY2017.csv > christmaseveaccidents.txt” command.
+
+7. 15 incidents involved trees. Used Command "grep tree OSHA\ fatalities\ FY2017.csv | grep -v Street | grep -v Tree > treeaccidents.txt" to create separate file.
